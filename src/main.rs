@@ -59,7 +59,7 @@ fn process_mp3(path: &PathBuf)
         return;
     }
 
-    if tag.title().is_none() {
-        println!("MP3 {} has no title defined", path.display());
+    if tag.album().is_none() {
+        println!("MP3 {} has no album defined", path.display());
     }
 }
